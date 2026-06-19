@@ -19,6 +19,8 @@ const I: Record<string, ReactNode> = {
   shield: <path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z" />,
   sun: <><circle cx="12" cy="12" r="4" /><path d="M12 2v2.5M12 19.5V22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M2 12h2.5M19.5 12H22M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8" /></>,
   moon: <path d="M20 13.5A8 8 0 1 1 10.5 4a6.5 6.5 0 0 0 9.5 9.5z" />,
+  youtube: <><rect x="2.5" y="5.8" width="19" height="12.4" rx="4" /><path d="M10.2 9.1l4.8 2.9-4.8 2.9z" fill="currentColor" stroke="none" /></>,
+  tiktok: <path fill="currentColor" stroke="none" d="M15.6 3h-2.25v12.2a2.42 2.42 0 1 1-2.05-2.39v-2.32a4.66 4.66 0 1 0 4.05 4.62V8.66a6.07 6.07 0 0 0 3.35 1.01V7.34A3.66 3.66 0 0 1 15.6 3z" />,
 };
 
 type IconProps = SVGProps<SVGSVGElement> & { name: string };

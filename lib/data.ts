@@ -4,7 +4,10 @@
    gradient + initials avatar is generated and shown. */
 
 export const CALENDLY = "https://calendly.com/aronvest-productions/30min";
-export const EMAIL = "aron@encorevideos.com";
+export const EMAIL = "aronvest.productions@gmail.com";
+
+export type SocialPlatform = "youtube" | "tiktok" | "instagram" | "x" | "spotify";
+export type Social = { platform: SocialPlatform; url: string };
 
 export type Channel = {
   id: string;
@@ -18,6 +21,7 @@ export type Channel = {
   grad: string;
   cat: string;
   avatar: string;
+  socials: Social[];
 };
 
 function avatarSrc(initials: string, c1: string, c2: string): string {
@@ -35,12 +39,16 @@ function avatarSrc(initials: string, c1: string, c2: string): string {
 type RawChannel = Omit<Channel, "avatar"> & { avatar?: string };
 
 const RAW_CHANNELS: RawChannel[] = [
-  { id: "chan-daily-laugh", name: "Daily Laugh Reel", subs: "1.2M", desc: "The best comedy moments from across the web, compiled fresh every single day.", initials: "DL", c1: "#36a6ff", c2: "#0a52d8", grad: "linear-gradient(135deg,#36a6ff,#0a52d8)", cat: "Comedy" },
-  { id: "chan-clipverse", name: "Andreas Eskander", subs: "13.8M", desc: "Viral clips from the world's top streamers, cut and curated for binge watching.", initials: "AE", c1: "#5ad1ff", c2: "#1273ff", grad: "linear-gradient(135deg,#5ad1ff,#1273ff)", cat: "Gaming" },
-  { id: "chan-mindbites", name: "Eirik Dalen", subs: "160K", desc: "Bite-sized knowledge compilations that turn long-form lessons into quick hits.", initials: "ED", c1: "#2e8bff", c2: "#0a3aa0", grad: "linear-gradient(135deg,#2e8bff,#0a3aa0)", cat: "Education" },
-  { id: "chan-hype", name: "TilouToons", subs: "163K", desc: "Sports and gaming highlights packaged into daily adrenaline-fueled compilations.", initials: "TT", c1: "#49b6ff", c2: "#0e5ed8", grad: "linear-gradient(135deg,#49b6ff,#0e5ed8)", cat: "Sports" },
-  { id: "chan-cozy", name: "Henrik Oven", subs: "350K", unit: "Followers", desc: "Relaxing, feel-good compilation moments designed to wind down and unwind to.", initials: "HO", c1: "#7db8ff", c2: "#1273ff", grad: "linear-gradient(135deg,#7db8ff,#1273ff)", cat: "Lifestyle" },
-  { id: "chan-trend", name: "Viral Colors", subs: "142K", desc: "The internet's best trends, archived and re-cut into endlessly rewatchable reels.", initials: "VC", c1: "#36a6ff", c2: "#0a3aa0", grad: "linear-gradient(135deg,#36a6ff,#0a3aa0)", cat: "Trending" },
+  { id: "chan-clipverse", name: "Andreas Eskander", subs: "13.8M", avatar: "/avatars/andreas.jpg", desc: "", initials: "AE", c1: "#5ad1ff", c2: "#1273ff", grad: "linear-gradient(135deg,#5ad1ff,#1273ff)", cat: "Vlogs", socials: [
+    { platform: "youtube", url: "https://www.youtube.com/@AndreasEskander/featured" },
+  ] },
+  { id: "chan-mindbites", name: "Eirik Dalen", subs: "160K", avatar: "/avatars/eirik.jpg", desc: "", initials: "ED", c1: "#2e8bff", c2: "#0a3aa0", grad: "linear-gradient(135deg,#2e8bff,#0a3aa0)", cat: "Vlogs", socials: [
+    { platform: "youtube", url: "https://www.youtube.com/@Eirik_Dal1" },
+  ] },
+  { id: "chan-cozy", name: "Henrik Oven", subs: "350K", unit: "Followers", avatar: "/avatars/henrik.jpg", desc: "", initials: "HO", c1: "#7db8ff", c2: "#1273ff", grad: "linear-gradient(135deg,#7db8ff,#1273ff)", cat: "Vlogs", socials: [
+    { platform: "tiktok", url: "https://www.tiktok.com/@groggymenn2" },
+    { platform: "youtube", url: "https://www.youtube.com/@henrikoven1/featured" },
+  ] },
 ];
 
 export const CHANNELS: Channel[] = RAW_CHANNELS.map((c) => ({
@@ -51,15 +59,15 @@ export const CHANNELS: Channel[] = RAW_CHANNELS.map((c) => ({
 export type Step = { n: string; icon: string; title: string; body: string };
 
 export const STEPS: Step[] = [
-  { n: "01", icon: "handshake", title: "Creator Partnership", body: "We partner with you and get access to your existing content library. No new filming, no new edits — we work with what you already have." },
-  { n: "02", icon: "broadcast", title: "Channel Management & Publishing", body: "Our team builds, manages, and publishes compilation channels around your content — handling strategy, editing, scheduling, and optimization end to end." },
-  { n: "03", icon: "trend", title: "Revenue Growth", body: "Your library starts working for you. Watch a brand-new, fully managed revenue stream grow — with zero extra work on your end." },
+  { n: "01", icon: "handshake", title: "Creator Partnership", body: "We partner with you and get access to your existing content library. No new filming, no new edits. We work with what you already have." },
+  { n: "02", icon: "broadcast", title: "Channel Management & Publishing", body: "Our team builds, manages, and publishes compilation channels around your content — handling strategy, editing, thumbnail design, and optimization end to end." },
+  { n: "03", icon: "trend", title: "Revenue Growth", body: "Your library starts working for you. Watch a brand-new, fully managed revenue stream grow, with zero extra work on your end." },
 ];
 
 export type RevStat = { v: string; l: string };
 
 export const REV_STATS: RevStat[] = [
-  { v: "6", l: "Channels managed" },
+  { v: "3", l: "Channels managed" },
   { v: "+15M", l: "Combined subscribers" },
   { v: "100%", l: "Creator-owned content" },
 ];

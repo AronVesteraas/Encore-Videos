@@ -34,8 +34,7 @@ function HeroCopy() {
         Turn your content into <span className="x" style={{ color: "var(--blue)" }}>additional revenue</span>
       </Reveal>
       <Reveal as="p" className="lede" delay={120}>
-        We help creators monetize their content through professionally managed compilation channels.<br />
-        No extra work on your end.
+        Additional revenue from content you already made.
       </Reveal>
       <Reveal className="hero-ctas" delay={180}>
         <Button variant="primary" size="lg" href="#book" icon="phone">Book a Call</Button>
@@ -73,12 +72,12 @@ function DashboardMock() {
           <div className="mock-kpis">
             <div className="kpi">
               <div className="kl"><Icon name="play" style={{ width: 14, height: 14 }} />Total views</div>
-              <div className="kv tnum">300M+</div>
+              <div className="kv tnum">30M+</div>
               <div className="kd up">Generated on YouTube</div>
             </div>
             <div className="kpi">
               <div className="kl"><Icon name="trend" style={{ width: 14, height: 14 }} />Revenue</div>
-              <div className="kv tnum">$100K+</div>
+              <div className="kv tnum">$50K+</div>
               <div className="kd up">Growing daily</div>
             </div>
           </div>
@@ -90,7 +89,7 @@ function DashboardMock() {
       </div>
       <div className="float-chip float-chip--br">
         <div className="ic"><Icon name="zap" style={{ width: 17, height: 17 }} /></div>
-        <div><div>6 channels</div><div className="fc-sub">fully managed</div></div>
+        <div><div>3 channels</div><div className="fc-sub">fully managed</div></div>
       </div>
     </Reveal>
   );

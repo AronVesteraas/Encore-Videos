@@ -9,7 +9,7 @@ export default function HowItWorks() {
         <Reveal className="sect-head center">
           <span className="eyebrow center">How it works</span>
           <h2 className="h-sect">Three steps. Zero extra work.</h2>
-          <p className="lede">From partnership to payout, we handle everything. You keep creating — we turn your back catalog into a new revenue stream.</p>
+          <p className="lede">From partnership to payout, we handle everything. You keep creating and we turn your back catalog into a new revenue stream.</p>
         </Reveal>
         <div className="steps" style={{ marginTop: 56 }}>
           {STEPS.map((s, i) => (

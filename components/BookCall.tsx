@@ -12,7 +12,7 @@ export default function BookCall() {
           <div>
             <span className="eyebrow center" style={{ color: "rgba(255,255,255,0.9)" }}>Free 30-min strategy call</span>
             <h2 style={{ marginTop: 14 }}>Book a free strategy call</h2>
-            <p>See exactly how Encore Videos would turn your content into a managed compilation channel — no commitment, no pressure.</p>
+            <p>See exactly how we would turn your content into a managed compilation channel — no commitment, no pressure.</p>
             <div className="book-cta" style={{ marginTop: 28 }}>
               <Button variant="light" size="lg" href={CALENDLY} target="_blank" icon="cal">Schedule a Call</Button>
             </div>
