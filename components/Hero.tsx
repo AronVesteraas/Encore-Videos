@@ -89,7 +89,7 @@ function DashboardMock() {
       </div>
       <div className="float-chip float-chip--br">
         <div className="ic"><Icon name="zap" style={{ width: 17, height: 17 }} /></div>
-        <div><div>3 channels</div><div className="fc-sub">fully managed</div></div>
+        <div><div>5 channels</div><div className="fc-sub">fully managed</div></div>
       </div>
     </Reveal>
   );

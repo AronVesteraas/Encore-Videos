@@ -67,7 +67,7 @@ export const STEPS: Step[] = [
 export type RevStat = { v: string; l: string };
 
 export const REV_STATS: RevStat[] = [
-  { v: "3", l: "Channels managed" },
+  { v: "5", l: "Channels managed" },
   { v: "+15M", l: "Combined subscribers" },
   { v: "100%", l: "Creator-owned content" },
 ];
