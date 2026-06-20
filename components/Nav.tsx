@@ -52,7 +52,7 @@ export default function Nav() {
       <header className={`nav ${scrolled ? "scrolled" : ""}`}>
         <div className="wrap nav-inner">
           <a className="brand" href="#top" aria-label="Encore Videos home">
-            <Logo size={52} />
+            <Logo size={42} />
             <span>Encore<span className="x"> Videos</span></span>
           </a>
           <nav className="nav-links">
