@@ -23,8 +23,7 @@ export default function About() {
           </ul>
         </Reveal>
         <Reveal>
-          <span className="eyebrow">About Encore Videos</span>
-          <h2 className="h-sect" style={{ marginTop: 16 }}>Your content, working twice as hard.</h2>
+          <h2 className="h-sect">About Encore Videos</h2>
           <p className="lede" style={{ marginTop: 20 }}>
             Encore Videos specializes in managing compilation channels for creators, helping them
             unlock additional revenue without additional work on their end.
